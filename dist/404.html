@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <script>
+      const pathParts = window.location.pathname.split("/").filter(Boolean);
+      const repoBase = pathParts.length ? `/${pathParts[0]}/` : "/";
+      window.location.replace(repoBase);
+    </script>
+  </head>
+  <body></body>
+</html>
